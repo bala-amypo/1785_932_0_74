@@ -5,8 +5,8 @@ public class StudentEntity{
 }
 @entity
 public class StudentEntity{
-    private int id;
+    private long id;
     private String name;
     private String email;
-    private String name;
+    private float cgpa;
 }
