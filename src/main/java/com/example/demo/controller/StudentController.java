@@ -20,21 +20,10 @@ public class StudentController {
         return ser.addStudents(student);
     }
     
-}
-
-@RestController
-public class StudentController {
-
-    @Autowired
-    StudentService ser;
-
-    @PostMapping("/addStudents")
-    public StudentEntity addStudents(@RequestBody StudentEntity student) {
-        return ser.addStudents(student);
-    }
-
     @GetMapping("/getStudents")
     public List<StudentEntity> getStudents() {
         return ser.getStudents();
     }
+
 }
+
